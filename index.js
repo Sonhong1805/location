@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/provices", (req, res) => {
+app.get("/provinces", (req, res) => {
   const { id, name, slug, type, name_with_type, code, isDeleted } = req.query;
   let filteredProvinces = provinces.filter((province) => {
     return (
