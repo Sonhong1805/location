@@ -35,7 +35,7 @@ app.get("/provinces", (req, res) => {
 
   res.status(200).json({
     message: "get province list successfully",
-    data: { filteredProvinces },
+    data: filteredProvinces,
   });
 });
 
@@ -46,7 +46,7 @@ app.get("/districts", (req, res) => {
   );
   res.status(200).json({
     message: "get district list successfully",
-    data: { filteredDistricts },
+    data: filteredDistricts ,
   });
 });
 
@@ -57,7 +57,7 @@ app.get("/wards", (req, res) => {
   );
   res.status(200).json({
     message: "get ward list successfully",
-    data: { filteredWards },
+    data: filteredWards ,
   });
 });
 
